@@ -6,15 +6,19 @@
     <title>Our first responsive web page with HTML5 and CSS3</title>
     <meta name="description" content="A basic responsive web page - an example from Chapter 1" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
- 
-    <!--Add the styles to the various html elements using CSS 
+    
     <link rel="stylesheet" href="css/html5_markup_language_1.css" />
-    -->
+
+    <!--Add the styles to the various html elements using CSS 
+     <link rel="stylesheet" href="css/html5_markup_language_1.css" />
+   -->
 </head>
 
 <body>
     <header class="Header">
-        <a href="/" class="LogoWrapper"><img src="img/SOC-Logo.png" alt="Scone O'Clock logo" /></a>
+        <a href="#howtomake" class="LogoWrapper">
+            <img src="img/SOC-Logo.png" alt="Scone O'Clock logo" />
+        </a>
         <p class="Strap">Scones: Hello! - it's the most resplendent of snacks</p>
     </header>
     <main>
@@ -26,7 +30,7 @@
                 <p class="ImageCaption">Incredible scones, picture from Wikipedia</p>
             </div>
         </div>
-        <p>Recipe and serving suggestions follow.</p>
+        <p><a href="#howtomake" >Recipe and serving suggestions follow.</a></p>
         <div class="Ingredients">
             <h3 class="SubHeader">Ingredients</h3>
             <ul>
@@ -42,7 +46,7 @@
                 <li>jam and clotted cream, to serve</li>
             </ul>
         </div>
-        <div class="HowToMake">
+        <div class="HowToMake" id="howtomake">
             <h3 class="SubHeader">Method</h3>
             <ol class="MethodWrapper">
                 <li>
