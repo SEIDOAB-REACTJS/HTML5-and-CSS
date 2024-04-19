@@ -13,15 +13,15 @@ body {
    
   display: flex;
   flex-direction: row-reverse;
-  flex-wrap: wrap;        /* test with wrap nowrap */
+  flex-wrap: nowrap;        /* test with wrap nowrap */
   justify-content:space-around;
 }
 
 .FlexItem {
   height: 150px;
-  width: 200px;     /* fixed size will demonstrate the wrap */
+  width: 300px;     /* fixed size will demonstrate the wrap */
   display:flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
 }
 .Red {
