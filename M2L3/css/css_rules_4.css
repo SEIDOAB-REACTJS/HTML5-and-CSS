@@ -7,14 +7,20 @@ span {
 	background-color: blue;
 }
 
-/* first and last child */
-span:last-of-type {
+span:first-of-type {
 	background-color: #f90;
 	border-radius: 50%;
 }
 
+/* first and last child 
+span:first-of-type
+span:last-of-type
+
+*/
+
 /* nth-child(..)
 (odd) (even) 
+span:nth-child(2n)
 (-n+4): the first 3  
 3n-2: every 3rd  */
 
