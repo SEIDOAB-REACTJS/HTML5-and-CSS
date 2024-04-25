@@ -74,6 +74,11 @@ a:hover
 .FlexItem:nth-child(even) {
   border: solid blue;
 }
+
+.FlexWrap>p {
+  padding: 10px;
+}
+
   @media (max-width: 600px) {
     .GridPage {
       grid-template-columns: repeat(2, 1fr);
