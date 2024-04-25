@@ -35,6 +35,45 @@
 .LastItem {
 	margin-top: auto;		/* change to margin-top; to move to the last item to the bottom */
 }
+
+a:hover
+{
+  font-size: x-large;
+  border: solid blue;
+}
+
+.FlexWrap {
+	font-family: 'Oswald', sans-serif;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  
+  display: flex;
+  flex-wrap: wrap;        /* test with wrap nowrap */
+  flex-direction: row;
+  align-items:center;    /* alignment along cross axis - center flex-start flex-end */
+  justify-content: space-around;
+}
+
+.FlexItem {
+  background-color: indianred;
+  width: 200px;     /* fixed size will demonstrate the wrap */
+
+  /* below is used to center text using a flexbox layout of the text in an FlexItem */
+  display: flex;
+  flex-direction: column;     
+  align-items: center;       
+  justify-content: center;
+  margin: 10px;
+}
+
+.FlexWrap img {
+  max-width: 100%;
+}
+
+.FlexItem:nth-child(even) {
+  border: solid blue;
+}
   @media (max-width: 600px) {
     .GridPage {
       grid-template-columns: repeat(2, 1fr);
@@ -59,6 +98,13 @@
         margin-top: unset;
         margin-left: auto;
     }
+
+    .FlexWrap {
+      flex-direction: column;
+    }
+    .FlexItem {
+      width: 500px;
+    }
   }
   
   [class^='GridItem'] {
@@ -82,6 +128,7 @@
   .GridItemMain {
     grid-area: main;
     background-color: orange;
+    overflow-y: scroll;
   }
   
   .GridItemFooter {
