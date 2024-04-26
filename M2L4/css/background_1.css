@@ -12,6 +12,6 @@ body {
 		url('../img/moon.png'),
 		url('../img/stars.jpg');
 	background-size: 75vmax, 50vw, cover;
-	background-position: top 50px right 80px, 40px 40px, top center;
+	background-position: top 50px right 80px, 100px 100px, top center;
 	background-repeat: no-repeat;
 }
