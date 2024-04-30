@@ -59,9 +59,7 @@ a:hover
 .About {
   color: #9CAFAA;
 }
-.FlexWrap.TableMain {
-  align-items: center;  
-}
+
 
 .FlexItem {
   background-color: #EFBC9B;
@@ -142,6 +140,7 @@ a:hover
   }
     
   .GridItemMain {
+    
     grid-area: main;
     background-color: #FBF3D5;
     overflow-y: scroll;
