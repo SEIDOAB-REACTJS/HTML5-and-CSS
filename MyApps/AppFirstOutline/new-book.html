@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first application</title>
 
+    <link rel="stylesheet" href="./css/colors-fonts.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/new-book.css" />
 </head>
@@ -12,73 +13,51 @@
     <div class="GridPage">
         <div class="GridItemMain">
 
-                <form class="formContainer" id="whoAreYou" method="post">
-                    <div class="formIntroContainer">
-                      <div>
-                        <h1>Add a new book</h1>
-                        <h2>
-                          Add details of your bestseller.
-                        </h2>
-                      </div>
-                      Note: an asterisk (*) indicates a required field
-                    </div>
-                    <fieldset>
-                      <legend>Book and author</legend>
-                
-                      <div class="formInputContainer">
-                        <input id="bookTitle" name="bookTitle" type="text" placeholder="e.g. Adventures of Tom Sawyer" required />
-                        <label for="bookTitle">Book title</label>
-                      </div>
-                      <div class="formInputContainer">
-                        <input id="author" name="author" type="text" placeholder="e.g. Mark Twain" required />
-                        <label for="author">Author</label>
-                      </div>
-                      <div class="formInputContainer">
-                        <input id="yearPublished" name="yearPublished" type="number" min="0" max="2024" required />
-                        <label for="yearPublished">Year published</label>
-                      </div>
-                    </fieldset>
-                
-                    <fieldset>
-                      <legend>Sales success</legend>
-                        <div class="formInputContainer">
-                          <input id="yearPublished" name="yearPublished" type="number" min="0" max="2024" required />
-                          <label for="yearPublished">Year published</label>
-                        </div>                
-                    </fieldset>
-                
-                    <fieldset>
-                      <legend>Tell us about yourself <span>(3 of 3)</span></legend>
-                
-                      <div class="formInputContainer">
-                        <input id="personName" name="personName" pattern="^([\D]{2,30}\s+)+([a-zA-Z]{2,30})$" placeholder="John Smith"
-                          required />
-                        <label for="personName">What is your name?</label>
-                      </div>
-                      <div class="formInputContainer">
-                        <input id="personBirthDate" class="personBirthDate" type="date" name="personBirthDate" />
-                        <label for="personBirthDate">When were you born?</label>
-                      </div>
-                      <div class="formInputContainer">
-                        <input id="personPhone" name="personPhone" type="personPhone" placeholder="1-234-546758" autocomplete="off"
-                          required />
-                        <label for="personPhone">What is your phonenumber?</label>
-                      </div>
-                      <div class="formInputContainer">
-                        <input id="personEmail" name="personEmail" type="email" placeholder="john.smith@gmail.com" required />
-                        <label for="personEmail">What is your email address_</label>
+          <form class="formContainer" id="whoAreYou" method="post">
+              <div class="formIntroContainer">
+                <div>
+                  <h1>Add a new book</h1>
+                  <h2>
+                    Add details of your favorite bestseller.
+                  </h2>
                 </div>
-                     </fieldset>
-                
-                    <button class="form-Submit_Btn" type="submit" value="Submit Redemption">
-                      <span class="flipper">
-                        <span class="flipper-object flipper-vertical">
-                          <span class="panel front">Ready?</span>
-                          <span class="panel back">Submit</span>
-                        </span>
-                      </span>
-                    </button>
-                  </form>       
+                Note: an asterisk (*) indicates a required field
+              </div>
+
+              <div class="formContentContainer">
+                <fieldset>
+                  <legend>Book and author</legend>
+            
+                  <div class="formInputContainer">
+                    <input id="bookTitle" name="bookTitle" type="text" placeholder="e.g. Adventures of Tom Sawyer" required />
+                    <label for="bookTitle">Book title</label>
+                  </div>
+                  <div class="formInputContainer">
+                    <input id="author" name="author" type="text" placeholder="e.g. Mark Twain" required />
+                    <label for="author">Author</label>
+                  </div>
+                  <div class="formInputContainer">
+                    <input id="yearPublished" name="yearPublished" type="number" min="0" max="2024" required />
+                    <label for="yearPublished">Year published</label>
+                  </div>
+                  <div class="formInputContainer">
+                    <input id="originalLanguage" name="originalLanguage" type="text" placeholder="e.g. English" required />
+                    <label for="originalLanguage">Original language</label>
+                  </div>
+                </fieldset>
+            
+                <fieldset>
+                  <legend>Sales success</legend>
+                    <div class="formInputContainer">
+                      <input id="yearPublished" name="yearPublished" type="number" min="0" max="2024" required />
+                      <label for="yearPublished">Year published</label>
+                    </div>                
+                </fieldset>
+              </div>
+          
+              <button type="submit">Add book</button>
+            </form>
+                 
         </div>
         <div class="GridItemSideOne">
             <div class="MenuWrap">

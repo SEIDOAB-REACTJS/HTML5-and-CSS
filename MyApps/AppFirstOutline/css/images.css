@@ -11,7 +11,7 @@
 }
 
 .FlexItem {
-  background-color: #EFBC9B;
+  background-color: var(--color5);
   width: 200px;     /* fixed size will demonstrate the wrap */
 
   /* below is used to center text using a flexbox layout of the text in an FlexItem */
@@ -21,7 +21,7 @@
   justify-content: center;
   margin: 10px;
   padding: 10px;
-  box-shadow: inset 0 0px 30px 10px #FBF3D5;
+  box-shadow: inset 0 0px 30px 10px var(--color1);
   border-radius: 15px;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .FlexItem:nth-child(even) {
-  border: solid #9CAFAA;
+  border: solid var(--color2);
 }
 
 .FlexWrap>p {

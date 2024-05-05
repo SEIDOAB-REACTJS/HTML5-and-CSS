@@ -1,7 +1,7 @@
 :root
 {
-  color: #FBF3D5;
-  font-family: 'Oswald', sans-serif;
+  color: var(--color1);
+  font-family: var(--font1);
 }
 
 .GridPage {
@@ -26,7 +26,7 @@
 }
   
 .ListItem, .LastItem {
-  color: #FBF3D5;
+  color: var(--color1);
 	display: flex;
 	text-decoration: none;  /* removes the classic link underline */
 }
@@ -41,7 +41,7 @@
 
 a:hover
 {
-  color: black;
+  color: var(--color4);
 }
 
   @media (max-width: 600px) {
@@ -79,23 +79,23 @@ a:hover
   
   .GridItemHeader {
     grid-area: header;
-    background:linear-gradient(to right, #9CAFAA, #D6DAC8);
+    background:linear-gradient(to right, var(--color2), var(--color3));
   }
   
   .GridItemSideOne {
     grid-area: side1;
-    background-color: #9CAFAA;
+    background-color: var(--color2);
   }
     
   .GridItemMain {
     grid-area: main;
-    background-color: #FBF3D5;
+    background-color: var(--color1);
     overflow-y: scroll;
   }
   
   .GridItemFooter {
     grid-area: footer;
-    background:linear-gradient(to right, #9CAFAA, #D6DAC8);
+    background:linear-gradient(to right, var(--color2), var(--color3));
     display:flex;
     justify-content:flex-end;
     padding-right: 10px;

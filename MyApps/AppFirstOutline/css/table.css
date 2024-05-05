@@ -20,7 +20,7 @@
 }
 
 .theadFluid .trFluid {
-  background-color:#9CAFAA;
+  background-color: var(--color2);
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -35,7 +35,7 @@
 }
 
 .trFluid:nth-child(even) {
-  background-color:  #EFBC9B;
+  background-color: var(--color5);
 }
 
 /* Main container: initialize the flex, direction is row */

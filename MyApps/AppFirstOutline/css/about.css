@@ -7,6 +7,6 @@
 }
 
 .About {
-  color: #9CAFAA;
+  color: var(--color2);
   padding: 20px;
 }
